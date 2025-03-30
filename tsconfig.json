@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "rootDir": ".",
+      "outDir": "./dist",
+      "paths": {
+        "@pages/*": ["pages/*"],
+        "@steps/*": ["step-definitions/*"]
+      }
+    }
+  }

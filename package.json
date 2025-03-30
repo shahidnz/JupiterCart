@@ -1,0 +1,24 @@
+{
+  "name": "jupitercart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:cucumber": "cucumber-js --require-module ts-node/register --require tsconfig-paths/register --require './step-definitions/**/*.ts'",
+    "test:all": "npm run test && npm run test:cucumber",
+    "report": "allure generate allure-results -o allure-report && allure open"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "*",
+    "@playwright/test": "*",
+    "allure-cucumberjs": "*",
+    "allure-playwright": "^3.2.1",
+    "ts-node": "*",
+    "tsconfig-paths": "*",
+    "typescript": "*"
+  },
+  "author": "Shahid Siddiqui",
+  "license": "MIT",
+  "keywords": [],
+  "description": "Automation Suite for Jupiter Cart Usecases"
+}
